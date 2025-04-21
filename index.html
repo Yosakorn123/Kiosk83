@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>อาคารรัฐสีมาคุณากร</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="SUT_emblem_white.png" alt="Logo" class="logo" />
+      <h1>อาคารรัฐสีมาคุณากร</h1>
+    </div>
+  </header>
+
+  <!-- Room Info Drawer -->
+  <div id="room-drawer" class="room-drawer">
+    <div class="drawer-header">
+      <strong>Room Info</strong>
+      <button onclick="toggleDrawer()">✖</button>
+    </div>
+    <div class="drawer-content">
+      <div class="floor-section">
+        <button class="floor-toggle" onclick="toggleFloorRooms(1)">Floor 1</button>
+        <div id="floor-rooms-1" class="room-list">
+          <ul><li onclick="openRoomPopup('Room B6101-A')">Room B6101-A</li>
+            <li onclick="openRoomPopup('Room B6102-A')">Room B6102-A</li>
+            <li onclick="openRoomPopup('Room B6103-A')">Room B6103-A</li>
+            <li onclick="openRoomPopup('Room B6104-A')">Room B6104-A</li>
+            <li onclick="openRoomPopup('Room B6105-A')">Room B6105-A</li>
+            <li onclick="openRoomPopup('Room B6106-A')">Room B6106-A</li>
+            <li onclick="openRoomPopup('Room B6107-A')">Room B6107-A</li>
+            <li onclick="openRoomPopup('Room B6108-A')">Room B6108-A</li>
+            <li onclick="openRoomPopup('Room B6109-A')">Room B6109-A</li>
+            <li onclick="openRoomPopup('Room B6110-A')">Room B6110-A</li>
+            <li onclick="openRoomPopup('สำนักงานสำนักวิชาศาสตร์และศิลป์ดิจิทัล')">สำนักงานสำนักวิชาศาสตร์และศิลป์ดิจิทัล</li>
+            <li onclick="openRoomPopup('ห้องงานนวัตกรรมและการบริการ')">ห้องงานนวัตกรรมและการบริการ</li>
+            <li onclick="openRoomPopup('Learning Space')">Learning Space</li>
+            <li onclick="openRoomPopup('ห้องพักอาจารย์')">ห้องพักอาจารย์</li>
+            <li onclick="openRoomPopup('ห้องเจ้าหน้าที่สื่อโสต')">ห้องเจ้าหน้าที่สื่อโสต</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="floor-section">
+        <button class="floor-toggle" onclick="toggleFloorRooms(2)">Floor 2</button>
+        <div id="floor-rooms-2" class="room-list">
+          <ul>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 1')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 1</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 2')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 2</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 3')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 3</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 4')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 4</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 5')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 5</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 6')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 6</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 7')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 7</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 8')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 8</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 9')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 9</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 19')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 19</li>
+            <li onclick="openRoomPopup('ห้องบริการการเทคโนโลยี 1')">ห้องบริการการเทคโนโลยี 1</li>
+            <li onclick="openRoomPopup('ห้องบริการการเทคโนโลยี 2')">ห้องบริการการเทคโนโลยี 2</li>
+            <li onclick="openRoomPopup('ห้องปฏิการเสียง')">ห้องปฏิการเสียง</li>
+            <li onclick="openRoomPopup('ห้องปฏิการลำดับภาพและเสียง')">ห้องปฏิการลำดับภาพและเสียง</li>
+            <li onclick="openRoomPopup('สำนักงานศุยน์นวัตกรรมและเทคโนโลยีการศึกษา')">สำนักงานศูนย์นวัตกรรมและเทคโนโลยีการศึกษา</li>
+            <li onclick="openRoomPopup('สตูดิโอถ่ายภาพ')">สตูดิโอถ่ายภาพ</li>
+            <li onclick="openRoomPopup('ห้องประเมินประสิทธิภาพการสอน')">ห้องประเมินประสิทธิภาพการสอน</li>
+            <li onclick="openRoomPopup('Creative Media & Innovation Space')">Creative Media & Innovation Space</li>
+            <li onclick="openRoomPopup('สตูดิโอผลิตแอนิเมชั่นขั้นสูง')">สตูดิโอผลิตแอนิเมชั่นขั้นสูง</li>
+            <li onclick="openRoomPopup('ห้องปฏิการคอมพิวเตอร์กราฟฟิก')">ห้องปฏิการคอมพิวเตอร์กราฟฟิก</li>
+            <li onclick="openRoomPopup('ห้องปฏิการด้านสื่อปฏิสัมพันธ์')">ห้องปฏิการด้านสื่อปฏิสัมพันธ์</li>
+            <li onclick="openRoomPopup('ห้องพักอาจารย์2')">ห้องพักอาจารย์</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="floor-section">
+        <button class="floor-toggle" onclick="toggleFloorRooms(3)">Floor 3</button>
+        <div id="floor-rooms-3" class="room-list">
+          <ul>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 10')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 10</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 11')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 11</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 12')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 12</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 13')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 13</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 14')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 14</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 15')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 15</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 16')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 16</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 17')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 17</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัล 18')">ห้องปฏิบัติการเทคโนโลยีดิจิทัล 18</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีดิจิทัลเชิงนวัตกรรมขั้นสูง')">ห้องปฏิบัติการเทคโนโลยีดิจิทัลเชิงนวัตกรรมขั้นสูง</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการธุรกิจอัจฉริยะและการวิเคราะห์ข้อมูล')">ห้องปฏิบัติการธุรกิจอัจฉริยะและการวิเคราะห์ข้อมูล</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการไซเบอร์สเปซและความมั่งคงปรอดภัยไซเบอร์')">ห้องปฏิบัติการไซเบอร์สเปซและความมั่งคงปรอดภัยไซเบอร์</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการด้านการผลิตรายการดิจิทัล')">ห้องปฏิบัติการด้านการผลิตรายการดิจิทัล</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการด้านการผลิตรายการดิจิทัลขนาดเล็ก')">ห้องปฏิบัติการด้านการผลิตรายการดิจิทัลขนาดเล็ก</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีเสมือนจริง')">ห้องปฏิบัติการเทคโนโลยีเสมือนจริง</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการเทคโนโลยีสื่อดิจิทัล')">ห้องปฏิบัติการเทคโนโลยีสื่อดิจิทัล</li>
+            <li onclick="openRoomPopup('ห้องควบคุมทางเทคนิค')">ห้องควบคุมทางเทคนิค</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 1')">ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 1</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 2')">ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 2</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 3')">ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 3</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 4')">ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 4</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 5')">ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 5</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 6')">ห้องปฏิบัติการบริหารการคลังสื่อดิจิทัล 6</li>
+            <li onclick="openRoomPopup('ห้องคัดเลือกสื่อดิจิทัล')">ห้องคัดเลือกสื่อดิจิทัล 6</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการตรวจสอบคุณภาพสื่อ')">ห้องปฏิบัติการตรวจสอบคุณภาพสื่อ</li>
+            <li onclick="openRoomPopup('ห้องสตูดิโอบันทึกเสียง 1')">ห้องสตูดิโอบันทึกเสียง 1</li>
+            <li onclick="openRoomPopup('ห้องสตูดิโอบันทึกเสียง 2')">ห้องสตูดิโอบันทึกเสียง 2</li>
+            <li onclick="openRoomPopup('ห้องสตูดิโอบันทึกเสียง 3')">ห้องสตูดิโอบันทึกเสียง 3</li>
+            <li onclick="openRoomPopup('ห้องสตูดิโอบันทึกเสียง 4')">ห้องสตูดิโอบันทึกเสียง 4</li>
+            <li onclick="openRoomPopup('ห้องปฏิบัติการด้านเสียงขั้นสูง')">ห้องปฏิบัติการด้านเสียงขั้นสูง</li>
+            <li onclick="openRoomPopup('ห้องผลิตสื่อการสอนด้วยตนเอง 1-4')">ห้องผลิตสื่อการสอนด้วยตนเอง 1-4</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="floor-section">
+        <button class="floor-toggle" onclick="toggleFloorRooms(4)">Floor 4</button>
+        <div id="floor-rooms-4" class="room-list">
+          <ul>
+            <li onclick="openRoomPopup('สำนักงานศูนย์คอมพิวเตอร์')">สำนักงานศูนย์คอมพิวเตอร์</li>
+            <li onclick="openRoomPopup('ห้องประชุมสิริคุณากร')">ห้องประชุมสิริคุณากร</li>
+            <li onclick="openRoomPopup('ห้องประชุมสีมาดิจิทัล')">ห้องประชุมสีมาดิจิทัล</li>
+            <li onclick="openRoomPopup('ห้องประชุมคุณากรรัตน')">ห้องประชุมคุณากรรัตน</li>
+            <li onclick="openRoomPopup('ห้อง Studio Control Room 1')">ห้อง Studio Control Room 1</li>
+            <li onclick="openRoomPopup('ห้อง Digital Studio 2')">ห้อง Digital Studio 2</li>
+            <li onclick="openRoomPopup('ห้อง Digital Studio 3')">ห้อง Digital Studio 3</li>
+            <li onclick="openRoomPopup('ห้องประชุมทางไกล')">ห้องประชุมทางไกล</li>
+            <li onclick="openRoomPopup('สำนักงานศูนย์นวัตกรรมและเทคโนโลยีการศึกษา4')">สำนักงานศูนย์นวัตกรรมและเทคโนโลยีการศึกษา</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="floor-section">
+        <button class="floor-toggle" onclick="toggleFloorRooms(5)">Floor 5</button>
+        <div id="floor-rooms-5" class="room-list">
+          <ul>
+            <li onclick="openRoomPopup('B6501-A')">B6501-A</li>
+            <li onclick="openRoomPopup('B6502-A')">B6502-A</li>
+            <li onclick="openRoomPopup('B6503-A')">B6503-A</li>
+            <li onclick="openRoomPopup('สถานส่งเสริมและพัฒนาระบบสารสนเทศเพื่อการจัดการ')">สถานส่งเสริมและพัฒนาระบบสารสนเทศเพื่อการจัดการ</li>
+            <li onclick="openRoomPopup('Learning Space5')">Learning Space</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Drawer Toggle Button -->
+  <button id="drawer-toggle" class="drawer-toggle" onclick="toggleDrawer()">Room Info</button>
+
+  <!-- Main Content -->
+  <main class="map-area">
+    <!-- Floor Selector (moved here) -->
+    <div class="floor-selector-body">
+      <span>เลือกชั้น:</span>
+      <div class="floor-buttons">
+        <button onclick="switchFloor(1)">1</button>
+        <button onclick="switchFloor(2)">2</button>
+        <button onclick="switchFloor(3)">3</button>
+        <button onclick="switchFloor(4)">4</button>
+        <button onclick="switchFloor(5)">5</button>
+      </div>
+    </div>
+
+    <img id="floor-map" src="floor1.png" alt="Floor Map" class="floor-image" />
+
+    <div id="room-popup" class="popup hidden">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeRoomPopup()">×</span>
+        <h2 id="popup-room-name">Room Name</h2>
+        <div class="image-slider">
+          
+          <img id="popup-room-image" src="" alt="Room Image">
+          
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Educational Institute
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
